@@ -1,9 +1,9 @@
 #!/bin/bash     
 
-#Autor: Josué Gómez
-#Tipo: Script de Bash
-#La manera de ejecurlo es: ./ArchivoparaC.sh
-#Resumen: Este es un generador automático  de comentarios para scripts de C
+#Autor:      Josué Gómez
+#Tipo:       Script de Bash
+#Se ejecuta: ./ArchivoparaC.sh
+#Resumen:    Este es un generador automático  de comentarios para scripts de C
 
 #INTERACCIÓN CON EL USARIO, OBTENCIÓN DE DATOS
 
