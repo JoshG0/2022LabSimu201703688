@@ -1,10 +1,10 @@
-# Laboratorio de Simulación IS
+# Laboratorio de Simulación I-S 2022
 ![size](https://img.shields.io/github/languages/code-size/JoshG0/2022LabSimu201703688)
 ## Descripción
-Este es un repositorio que contiene ejercicios del curso de laboratorio de Simulación de la ECFM. Son ejercicios realizados en Linux bajo la bersión de Ubuntu 18.04
+Este es un repositorio que contiene ejercicios del curso de laboratorio de Simulación de la Escuela de Ciencias Físicas y Matemáticas. Son ejercicios realizados en Linux bajo la imagen  de Ubuntu 18.04
 
 ## Sección de Requerimientos
-Se requiere un compilador para c utilizando Linux
+Se requiere un compilador para C utilizando Linux
 ## Instalación
 La instrcción para instalar un compilador en Linux, sigue con la siguiente instrucción:
 ``` 
