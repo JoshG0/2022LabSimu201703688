@@ -37,14 +37,14 @@ version=$(gcc --version | head -n 1)
 #creando el contenido:
 echo "/*" > $fnombre  
 echo "Autor:      Josué Gómez" >> $fnombre
-echo "Compilador:   " $version >> $fnombre
+echo "Compilador:" $version >> $fnombre
 #cómo se guardará el archivo y como se compilará
-echo "Compilado:    " gcc $fnombre -o $nombre".out" >> $fnombre 
-echo "Fecha:        " $fecha >> $fnombre 
-echo "Librerias:    stdio (u otras)" >> $fnombre
-echo "Resumen:      " $resumen >> $fnombre
-echo "Entada:       " $entrada >> $fnombre
-echo "Salida:       " $salida >> $fnombre
+echo "Compilado: " gcc $fnombre -o $nombre".out" >> $fnombre 
+echo "Fecha:     " $fecha >> $fnombre 
+echo "Librerias:  stdio (u otras)" >> $fnombre
+echo "Resumen:   " $resumen >> $fnombre
+echo "Entada:    " $entrada >> $fnombre
+echo "Salida:    " $salida >> $fnombre
 echo "*/" >> $fnombre
 echo "" >> $fnombre
 echo  //Librerias >> $fnombre

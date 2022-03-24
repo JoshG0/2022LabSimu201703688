@@ -1,1 +1,16 @@
-# 2022LabSimu201703688
+# Laboratorio de Simulación IS
+![size](https://img.shields.io/github/languages/code-size/JoshG0/2022LabSimu201703688)
+## Descripción
+Este es un repositorio que contiene ejercicios del curso de laboratorio de Simulación de la ECFM. Son ejercicios realizados en Linux bajo la bersión de Ubuntu 18.04
+
+## Sección de Requerimientos
+Se requiere un compilador para c utilizando Linux
+## Instalación
+La instrcción para instalar un compilador en Linux, sigue con la siguiente instrucción:
+``` 
+$ sudo apt-get install build-essential
+```
+## Contenido
+El repositorio contiene scrips en Bash y lenguaje C. Un ejemplo, es el scrip de Bash que proporciona la información del Clima de la ciudad de Guatemala [Clima](Bash/Clima.sh)
+## Licencia
+![MIT](https://img.shields.io/github/license/JoshG0/2022LabSimu201703688?style=flat-square)
