@@ -13,7 +13,7 @@ Salida:     Media aritmética
 #include <stdio.h>
 
 int main(){
-//1. declaración e inicialización de variables
+//1. declaración e inicialización de variables.
     float x = 0, media = 0;
     int i = 0, n = 0;
 //2. validar el numero de elmentos ingresados hasta que llegue a 3

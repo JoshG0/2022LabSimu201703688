@@ -1,5 +1,5 @@
 # Problemas de Programación en C
-Dentro de esta carpeta se recopilan los problemas con el código en lenguage C respectivo del Laboraorio de Simulación
+Dentro de esta carpeta se recopilan los problemas a realizar  con código de programación en lenguage C del Laboraorio de Simulación
 
 ### Problema 1
 ![Problema1](Imagenes/Eje%201.PNG)
