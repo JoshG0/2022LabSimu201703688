@@ -38,13 +38,13 @@ int main(){
         {
             max = x;
         }
+       
         //7. Evaluamos si el valor ingresado es el mínimo hasta el momento
-
         if (x < min)
         {
             min = x;
         }
-
+        
         //8. Leer nuevos valores
         puts("Ingrese otra altura: ");
         scanf("%f", &x);
@@ -59,10 +59,6 @@ int main(){
             printf("Los resultados son: \n La media es: %.1f \n El valór mínimo es: %.1f \n El valor máximo es: %.1f \n",med,min,max);   
          }
     
-
-
-
  return 0;
-
 }
 
