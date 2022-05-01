@@ -1,11 +1,6 @@
-# Datos sobre el precio de dos stocks en dolares de diferentes años. (año, s1, s2)
-1980    49  162
-1981    62  144
-1983    67  140
-1984    98  156 
-1985    25  123
-1986    15  552 
-1987    12  111 
-1988    86  222
-1989    67  123
-1990    89  153
+# Mediciones de Ondas estacionaria con una cuerda (Tensión (N), Longitud de onda (m))
+4.694   3
+1.264   1.5
+0.578   1
+0.284   0.75
+0.196   0.6
