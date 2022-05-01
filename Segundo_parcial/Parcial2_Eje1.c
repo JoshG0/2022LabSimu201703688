@@ -3,7 +3,7 @@ Autor:      Josué Gómez
 Compilador: gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
 Compilado:  gcc Parcial2_Eje1.c -o Parcial2_Eje1.out -lm
 Fecha:      Sat Apr 30 18:41:37 CST 2022
-Librerias:  stdio, math
+Librerias:  stdio, math, stdlib.h
 Resumen:    Con el método númerico de mínimos cuadrados, y a partir de los datos obtenidos
             del experimento de ondas estacionarias con una cuerda, se obtendra una gráfica
             de los datos y así mismo se estimará una recta que mejor se aproxime a los datos
@@ -20,15 +20,12 @@ Salida:
 #include <stdlib.h>
 
 //1.Declaracion e inicializacion de variables globales y datos del problema
-  
-    // ten: tensión, ldo: longitud de onda, er: erro de la medición
-    // fre: frecuencia dada, tsion: cuando la tension sea 
 float ten[]={4.694,1.264,0.578,0.284,0.196}, ldo[]={3,1.5,1,0.75,0.6}, er = 0.001;
 float fre = 60, tsion = 60;  
 
 int n = sizeof(ten)/sizeof(ten[0]); 
 
-//2. Funcioes para cada expresión del algoritmo
+//2. Prototipado de funciones
 //2.1 Imprimir resultados
 void imprimir(float datos[]);
 //2.2 Sumatorias con sumas
@@ -97,18 +94,18 @@ void main(){
 //4. Función que imprime los datos ingresados
 void imprimir(float datos[]){
     puts("Datos ingresados");
-    for (int i = 0; i < n; i++) //llegar hasta el valor de n
+    for (int i = 0; i < n; i++) 
     {
         printf("%.3f ",datos[i]);
     }
-    puts("\n"); //salto de linea para los datos
+    puts("\n");
 }
 
-//5. Funcion de sumatorias, suma los elementos de los vectores
+//5. Funcion de sumatorias, suma los elementos de un vector
 //   ingresados
 float suma(float datos[]){
     float resp = 0;
-    //acumulación de elementos
+    //acumulación de elementos para sumarlos
     for (int i = 0; i < n; i++)
     {
         resp += datos[i];
@@ -116,10 +113,10 @@ float suma(float datos[]){
     return resp;
 }
 
-//6. Suma de los elementos de dos vectores ingresados
+//6. Suma la multiplicacion entre elementos de dos vectores ingresados
 float sumaMulti(float datos1[], float datos2[]){
     float resp = 0;
-    //acumulación de elementos
+    //acumulación de elementos para sumarlos
     for (int i = 0; i < n; i++)
     {
         resp += datos1[i]*datos2[i];
