@@ -35,7 +35,7 @@ La forma de compilar y ejecutra el programa será:
 $ gcc Parcial2_Eje1.c -o Parcial2_Eje1.out -lm
 $ ./Parcial2_Eje1.out
 ```
-La gráfica que muestra la comparación de los datos ploteados con la función que describe el comportamiento se puede encontrar [aquí](/Problemas_Programaci%C3%B3n/MinimosCuadrados.jpeg)
+La gráfica que muestra la comparación de los datos ploteados con la función que describe el comportamiento se puede encontrar [aquí](/Segundo_parcial/MinimosCuadrados.jpeg)
 
 ## Problema 2
 Para este [problema](/Segundo_parcial/Biseccion.c), se realizó un programa que realiza el algoritmo de Bisección, este algoritmo se desarrolló en funciones de tipo float para luego utilizarlas en la función principal 'main', así mismo se crearon punteros para crear archivos desde los cuales se pueda graficar los resultados con el progrma Gnuplut.
