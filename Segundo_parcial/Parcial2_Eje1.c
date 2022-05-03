@@ -23,6 +23,7 @@ Salida:
 float ten[]={4.694,1.264,0.578,0.284,0.196}, ldo[]={3,1.5,1,0.75,0.6}, er = 0.001;
 float fre = 60, tsion = 60;  
 
+//1.1Tamaño de los vectores, para poder ingresar mas de 6 componentes   
 int n = sizeof(ten)/sizeof(ten[0]); 
 
 //2. Prototipado de funciones
@@ -64,19 +65,19 @@ void main(){
     FILE* datos;
     FILE* regresion;
         //3.4.1 Archivo con datos iniciales
-        datos=fopen("Datos", "wr");
+        datos=fopen("Datos1", "wr");
         for (int i = 0; i < n; i++)
         {
             fprintf(datos, "%f\t%f\n",ten[i],ldo[i]);
         }
         fclose(datos);
         //3.4.2 Comparacion
-        regresion=fopen("grafica.gp", "wr");
+        regresion=fopen("Ejercicio1.gp", "wr");
             //3.4.2.1 Creacion de la grafica
             fprintf(regresion, "unset label\n");
             fprintf(regresion, "clear\n");
             fprintf(regresion, "set terminal jpeg\n");
-            fprintf(regresion, "set output 'comparacion.jpeg'\n");
+            fprintf(regresion, "set output 'MinimosCuadrados.jpeg'\n");
             fprintf(regresion, "set title 'Tensión vs. Longitud de Onda'\n");
             fprintf(regresion, "set xlabel 'Tensión [N]'\n");
             fprintf(regresion, "set ylabel 'Longitud de Onda [m]'\n");
@@ -84,11 +85,10 @@ void main(){
             fprintf(regresion, "set yrange [0:4]\n");
             fprintf(regresion, "set grid\n");
             fprintf(regresion, "set style data dots\n");
-            fprintf(regresion, "set style data linespoints\n");
-            fprintf(regresion, "plot \"Datos\" with linespoints, %f*x+%f with linespoints",m,b);
-            fclose(regresion);
+            fprintf(regresion, "plot \"Datos1\", %f*x+%f",m,b);
+        fclose(regresion);
     //3.5 Apertura del archivo
-    system("gnuplot grafica.gp");
+    system("gnuplot Ejercicio1.gp");
 }
 
 //4. Función que imprime los datos ingresados
