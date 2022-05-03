@@ -37,6 +37,8 @@ $ ./Parcial2_Eje1.out
 ```
 La gráfica que muestra la comparación de los datos ploteados con la función que describe el comportamiento se puede encontrar [aquí](/Segundo_parcial/MinimosCuadrados.jpeg)
 
+Los resultados de este programa están se encuentan en [este](/Segundo_parcial/Imagenes/resultados1.png) enlace.
+
 ## Problema 2
 Para este [problema](/Segundo_parcial/Biseccion.c), se realizó un programa que realiza el algoritmo de Bisección, este algoritmo se desarrolló en funciones de tipo float para luego utilizarlas en la función principal 'main', así mismo se crearon punteros para crear archivos desde los cuales se pueda graficar los resultados con el progrma Gnuplut.
 
