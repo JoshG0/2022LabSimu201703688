@@ -55,7 +55,7 @@ int main(){
             fprintf(comparacion, "set style data linespoints\n");
             fprintf(comparacion, "plot cos(x)/sin(x)\n");        
         fclose(comparacion);
-    //2.2 Grafica 
+    //5.4 Grafica 
     system("gnuplot FucionyRaiz.gp");
     
 }
@@ -89,8 +89,9 @@ float biseccion(float inicial, float final){
     return medio;
 }
 
+//4. Fucnion que realiza el metodo numerico de Biseccion a un termino anterior
 float biseccione(float inicial, float final){
-    // variables locales
+    //4.1 variables locales
     float medioe = 0,  funa = 0, check = 0;
     for (int i = 0; i < n-1; i++){
 
