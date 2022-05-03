@@ -37,7 +37,7 @@ int main(){
     raiz = biseccion(ina, inb);
     float ep = biseccione(ina, inb);
     error = ((raiz - ep)*c)/(raiz);
-    printf("\nLa raíz se encuentra en x = %0.4f rad. \n",raiz);
+    printf("\nLa raíz se encuentra en x = %0.6f rad. \n",raiz);
     printf("El error de esta aproximación es del: %f porciento \n",error);
 
     //5.3 Creación y ejecución de grafica.
