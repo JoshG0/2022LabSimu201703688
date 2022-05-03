@@ -23,7 +23,8 @@ Salida:
     int n = 100;
 float funcion = 0, raiz = 0, error = 0;
 
-//2. Prototipo de funciones
+//2. Prototipo de funciones, la primera para aplicar el algoritmo,
+//   la segunda para el algoritmo con una iteracion menos a la requerida. 
 float biseccion(float inicial, float final);
 float biseccione(float inicial, float final);
 
@@ -36,7 +37,7 @@ int main(){
     raiz = biseccion(ina, inb);
     float ep = biseccione(ina, inb);
     error = ((raiz - ep)*c)/(raiz);
-    printf("\nLa raíz se encuentra en x = %0.4f\n",raiz);
+    printf("\nLa raíz se encuentra en x = %0.4f rad. \n",raiz);
     printf("El error de esta aproximación es del: %f porciento \n",error);
 
     //5.3 Creación y ejecución de grafica.
@@ -53,7 +54,9 @@ int main(){
             fprintf(comparacion, "set yrange [-5:5]\n");
             fprintf(comparacion, "set grid\n");
             fprintf(comparacion, "set style data linespoints\n");
-            fprintf(comparacion, "plot cos(x)/sin(x)\n");        
+            fprintf(comparacion, "xA=%0.3f\n",raiz);
+            fprintf(comparacion, "set arrow from xA, -5 to xA,5 nohead dt 2 lc -1\n ");    
+            fprintf(comparacion, "plot cos(x)/sin(x) \n");        
         fclose(comparacion);
     //5.4 Grafica 
     system("gnuplot FucionyRaiz.gp");
@@ -72,7 +75,7 @@ float biseccion(float inicial, float final){
         funa = cos(inicial)/sin(inicial); // acá se coloca la funcón a analizar
         check = funa*funcion;
 
-        if (check == 0)
+        if (funcion == 0)
         {
             puts("La raiz es: x = 0");
             break;
@@ -100,22 +103,15 @@ float biseccione(float inicial, float final){
         funa = cos(inicial)/sin(inicial); // acá se coloca la funcón a analizar
         check = funa*funcion;
 
-        if (check == 0)
-        {
-            puts("La raiz es: x = 0");
-            break;
-        }
-        else if (check < 0)
+        if (check < 0)
         {
             final = medioe;
         }
-        else if(check > 0){
+        if(check > 0)
+        {
             inicial = medioe;
         }
 
     }
     return medioe;
 }
-
-
-

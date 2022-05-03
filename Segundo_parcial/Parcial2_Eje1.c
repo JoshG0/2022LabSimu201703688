@@ -53,11 +53,12 @@ void main(){
     deltab = er/sqrt(n);
     //3.7 Calculo de la longitud de onda a cierta tensión
     resultado = m*tsion+b;
-
+    float den = (m)/(4*fre*fre);
     //3.3 Imprimir los resultados de los cálculos
     printf("\nFunción que se aproxima a los datos: f(x)= %fx + %f\n", m,b);
     printf("\nCoeficiente de determinacion: %f\n", r*r);
     printf("\nLas incertezas de m y b son: %f y %f respectivamente \n",deltam,deltab);
+    printf("\nLa densidad lineal de la cuerda será de: %f(L^-2) [kg/m], donde L es la longitud de la cuerda\n",den);
     printf("\nLa longitud de onda cuando la tensión sea de %.0f N será: %.3f(+- %f)m \n ",tsion,resultado,deltab+deltam);
     puts("\n");
 
@@ -65,7 +66,7 @@ void main(){
     FILE* datos;
     FILE* regresion;
         //3.4.1 Archivo con datos iniciales
-        datos=fopen("Datos1", "wr");
+        datos=fopen("Datos1.dat", "wr");
         for (int i = 0; i < n; i++)
         {
             fprintf(datos, "%f\t%f\n",ten[i],ldo[i]);
@@ -84,11 +85,11 @@ void main(){
             fprintf(regresion, "set xrange [0:5]\n");
             fprintf(regresion, "set yrange [0:4]\n");
             fprintf(regresion, "set grid\n");
-            fprintf(regresion, "set style data dots\n");
-            fprintf(regresion, "plot \"Datos1\", %f*x+%f",m,b);
+            fprintf(regresion, "set style data linespoints\n");
+            fprintf(regresion, "plot \"Datos1.dat\", %f*x+%f",m,b);
         fclose(regresion);
     //3.5 Apertura del archivo
-    system("gnuplot Ejercicio1.gp");
+    system("gnuplot -p Ejercicio1.gp");
 }
 
 //4. Función que imprime los datos ingresados
@@ -123,8 +124,3 @@ float sumaMulti(float datos1[], float datos2[]){
     }
     return resp;
 }
-
-
-
-
-

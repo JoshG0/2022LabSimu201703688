@@ -9,4 +9,6 @@ set xrange [0:3]
 set yrange [-5:5]
 set grid
 set style data linespoints
-plot cos(x)/sin(x)
+xA=1.571
+set arrow from xA, -5 to xA,5 nohead dt 2 lc -1
+ plot cos(x)/sin(x) 

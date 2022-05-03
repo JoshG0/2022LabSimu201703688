@@ -4,7 +4,12 @@ Dentro de esta carpeta se recoplian los ejercicios a correspondientes al sgundo 
 ## Problema 1
 Para este [problema](/Segundo_parcial/Parcial2_Eje1.c) aplicamos el método númerico de mínimos cuadrados el cual dados un conjunto de pares ordenados y una familia de funciones, se intenta encontrar la función continua, dentro de dicha familia, que mejor se aproxime a los datos, un "mejor ajuste", de acuerdo con el criterio de mínimo error cuadrático. Para aplicarlo, se relizó un experimento de ondas estacionarias con una cuerda, se compara la longitud de onda en función de la tensión de la cuerda y la frecuenca a la que está estaba vibrando que en este caso era de 60Hz; se realiza un programa que aplica el método numérico antes mencionado a los datos obtenidos y a su vez proporciona una gráfica que compara los valores obtenidos en el laboratorio con la recta que mejor aproxima el comportamiento a partir de los mismos datos obtenidos. Además se estima el valor de la densidad líneal  y la longitud de onda cuando la tensión aplicada a la cuerda sea de $6N$.
 
-El diagrama de flujo correspondiente a este problema es el siguiente: 
+El diagrama de flujo resumido correspondiente a este problema es el siguiente:
+
+![](Imagenes/Diagrama%201.png) 
+
+El diagrama completo, con las funciones auxiliares se encuentra [aquí](/Segundo_parcial/Imagenes/MinCuadrados.pdf).
+
 
 ### Variables de entrada y salida:
 - ten: vector con los valores de las tensiones de la cuerda.
@@ -30,6 +35,8 @@ La forma de compilar y ejecutra el programa será:
 $ gcc Parcial2_Eje1.c -o Parcial2_Eje1.out -lm
 $ ./Parcial2_Eje1.out
 ```
+La gráfica que muestra la comparación de los datos ploteados con la función que describe el comportamiento se puede encontrar [aquí](/Problemas_Programaci%C3%B3n/MinimosCuadrados.jpeg)
+
 ## Problema 2
 Para este [problema](/Segundo_parcial/Biseccion.c), se realizó un programa que realiza el algoritmo de Bisección, este algoritmo se desarrolló en funciones de tipo float para luego utilizarlas en la función principal 'main', así mismo se crearon punteros para crear archivos desde los cuales se pueda graficar los resultados con el progrma Gnuplut.
 
@@ -37,7 +44,11 @@ El algoritmo se utilizó para encontrar la raiz de la funcion $\dfrac{Cos(x)}{Se
 
 El modo de detener la aplicación del algoritmo se utilizó  el criterio de número de iteraciones y así proporcionar una respuesta, cabe mencionar que entre mayor es el número de iteraciones, mejor es la aproximación al resultado analítico.
 
-El diagrama de flujo correspondiente a este problema es el siguiente: 
+Para este problema, el pseudocóido será:
+
+![](/Segundo_parcial/Imagenes/Ejercicio2.png)
+
+La gráfica en donde se muestran los resultados se encuentra [aquí](/Segundo_parcial/Funcion_y_raiz.jpeg)
 
 ### Variables de entrada y salida:
 - c: constante para el porcentaje.
