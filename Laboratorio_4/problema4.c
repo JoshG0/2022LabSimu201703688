@@ -285,13 +285,5 @@ int main(){
         }
     }
     
-    puts("\nFIN :)");
-
-    
-
-
-
-
-    
-    
+    puts("\nFIN :)");   
 }    
