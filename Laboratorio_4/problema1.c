@@ -26,7 +26,8 @@ int i = 0;
 int main(){
     //2.1 Interaccion con el usuario
     puts("      ---||Mostrar orden de los datos||---      ");
-    printf("De manera ascendente ingrese \"a\"\n");
+    printf("\nDe manera ascendente ingrese \"a\"\n");
+    puts("--------------------------------------");
     printf("De manera descendete ingrese \"d\"\n");
     val = getchar();
     //2.2 Inicio del loop
@@ -55,7 +56,7 @@ int main(){
         }
 
      //Cuando se ingrese un valor distinto
-     puts("Esta no es una opcion valida");
+     puts("Esta no es una opcion valida\n");
      val = getchar();
     }
 }

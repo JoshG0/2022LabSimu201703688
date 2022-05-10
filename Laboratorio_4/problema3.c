@@ -42,7 +42,7 @@ void main(){
         scanf("%d",&Vec2[i]);
     }
     puts("\n");
-    puts("Los vector 1 es: ");
+    puts("El vector 1 es: ");
     for ( i = 0; i < n; i++)
     {
         printf("%d, ",Vec1[i]);

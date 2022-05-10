@@ -196,7 +196,7 @@ int main(){
     //2.7 Inversa de A
     if (detA == 0)
     {
-        puts("\nLa matriz A matriz no es invertible");
+        puts("\nLa matriz A no es invertible");
     }else
      {
         adjA[0][0]=+matA[1][1]*matA[2][2]-matA[2][1]*matA[1][2];

@@ -19,13 +19,14 @@ void main(){
     int n = 5; 
     int datos[n];
     //1.1 Interacción con el usuario
+    puts("  ***ORDENAMIENTO DE VALORES***   ");
     for ( int i = 0; i < n; i++)
     {
         puts("Ingrese un número");
         scanf("%d", &datos[i]);
         
     }
-    puts("Los valores ingresados fueron: ");
+    puts("\nLos valores ingresados fueron: ");
     for (int i = 0; i < n; i++)
     {
         printf("%d ",datos[i]);
